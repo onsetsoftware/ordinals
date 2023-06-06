@@ -1,0 +1,29 @@
+{
+  "name": "@onsetsoftware/ordinals",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ordinals.umd.js",
+  "module": "./dist/ordinals.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ordinals.es.js",
+      "require": "./dist/ordinals.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "types": "./dist/types/index.d.ts"
+}
